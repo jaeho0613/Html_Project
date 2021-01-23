@@ -103,6 +103,7 @@ button {
 
 .navbar__menu {
   display: flex;
+  padding: 0;
 }
 
 .navbar__logo {
@@ -123,6 +124,15 @@ button {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-pink);
+}
+
+.navbar__toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 32px;
+  font-size: 30px;
+  color: var(--color-white);
+  display: none;
 }
 
 /* Home */
@@ -446,4 +456,49 @@ button {
   transform: scale(1.1);
   color: var(--color-yellow);
   transition: all var(--animation-duration) ease-in;
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-button {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: block;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avater {
+    width: 80px;
+    height: 80px;
+  }
 }
