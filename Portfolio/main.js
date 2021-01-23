@@ -35,6 +35,13 @@ homeContactBtn.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
+// Home 화면 페이드 아웃
+const home = document.querySelector(".home__container");
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener("scroll", () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
 // 스크롤 이벤트 메서드
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
