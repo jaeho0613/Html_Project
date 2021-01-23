@@ -26,7 +26,14 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove("open");
   scrollIntoView(link);
+});
+
+// Navbar 토글 버튼
+const navbarToggleBtn = document.querySelector(".navbar__toggle-button");
+navbarToggleBtn.addEventListener("click", () => {
+  navbarMenu.classList.toggle("open");
 });
 
 // Contact Me Button 클릭 이벤트
