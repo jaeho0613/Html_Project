@@ -26,10 +26,17 @@ navbarMenu.addEventListener("click", (event) => {
   if (link == null) {
     return;
   }
-
-  console.log(event.target.dataset.link);
-
-  // 해당 아이디로 스크롤 이벤트
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: "smooth" });
+  scrollIntoView(link);
 });
+
+// Contact Me Button 클릭 이벤트
+const homeContactBtn = document.querySelector(".home__contact");
+homeContactBtn.addEventListener("click", () => {
+  scrollIntoView("#contact");
+});
+
+// 스크롤 이벤트 메서드
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth" });
+}
