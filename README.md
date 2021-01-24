@@ -17,3 +17,5 @@ html 기초 강좌
 - CSS Peek : Ctrl + 마우스클릭시 CSS파일로 이동하게 해줌
 - HTML CSS Support : css에 정의된 변수를 인텔리전센스로 보여줌
 - HTML to CSS autocompletion : html에서 정의된 css변수를 인텔리전센스로 보여줌
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
