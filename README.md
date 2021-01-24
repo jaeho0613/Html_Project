@@ -1,4 +1,4 @@
-# Html_Basic_Project
+# Html_Project
 
 html 기초 강좌
 
