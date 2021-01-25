@@ -18,9 +18,15 @@ html 기초 강좌
 - HTML CSS Support : css에 정의된 변수를 인텔리전센스로 보여줌
 - HTML to CSS autocompletion : html에서 정의된 css변수를 인텔리전센스로 보여줌
 
-Font CSS:
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+<pre>
+<code>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-Font Awesome
+* {
+  font-family: "Poppins", sans-serif;
+  }
 
-<script src="https://kit.fontawesome.com/7d6b56a039.js" crossorigin="anonymous"></script>
+폰트 어썸
+  <script src="https://kit.fontawesome.com/7d6b56a039.js" crossorigin="anonymous"></script>
+</code>
+</pre>
