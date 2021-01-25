@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#fullpage {
+  background-attachment: fixed;
+}
+
+.section {
+  color: #fff;
+}
